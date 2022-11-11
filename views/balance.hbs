@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Web Bank</title>
+		<link rel="stylesheet" href="/css/design.css" />
+	</head>
+<body>
+		{{> login}}
+	<h1 class="clsHeaderPartial"></h1>	
+<form class="clsform" id="frmBankBalance" method="post" action="/b">
+		<article class="clscontainer">
+			<br><br><br>
+			<p class="clsbalance">{{ c.x }}</p>
+			<p class="clsbalance">{{ c.y }}</p class="clsbalance">
+			<p class="clsbalance">{{ c.z }}</p class="clsbalance">
+		</article>
+		<br>
+		<button class="clssubmit" type="submit">OK</button>
+	</form>
+
+</body>
+</html>

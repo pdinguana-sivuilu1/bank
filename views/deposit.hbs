@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Web Bank</title>
+		<link rel="stylesheet" href="/css/design.css" />
+    	<script src="/js/bank.js"></script>
+	</head>
+
+<body>
+	<h1 class="clsHeaderPartial"></h1>	<form class="clsform" id="frmBankDeposit" method="post" action="/l">
+
+		<article class="clscontainer">
+			<br><br><br>
+			<label class="clsDepositLabels">Account Number</label>&nbsp;
+			<input class="clsAccountNumber" name="txtaccountnumber" value="0000001" readonly>
+			<br><br>
+			<label class="clsDepositLabels">Amount</label>&nbsp;&nbsp;
+			<input id="txtamount" name="txtamount" type="text"
+					onkeydown="return fnDisableKeys(event)"
+					onkeypress="return fnInputCharacters(event)"
+					autofocus>
+		</article>
+
+		<section>
+			<button id="btnSubmit" name="btnSubmit" type="submit" value="deposit">Submit</button>
+			<button id="btnCancel" name="btnSubmit" type="submit" value="cancel">Cancel</button>		
+		</section>
+	</form>
+
+</body>
+</html>

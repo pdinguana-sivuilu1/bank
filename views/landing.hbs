@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Bank</title>
+<link rel="stylesheet" href="/css/design.css" />
+<script src="/js/bank.js"></script>
+</head>
+
+<body onload="fSelectBankingOption()">
+<form class="clsform" id="frmBankLanding" method="post" action="/l">
+<article class="clscontainer">
+<h6 class="deepshadow">Web<br>Bank</h6>
+</article>
+
+<nav class="clsmenu">
+
+<h3>Menu</h3>
+<br>
+<input id="txtid" name="txtid" type="text" maxlength="7" placeholder="Account Number"><br><br>
+<input id="rdobalance" name="banking" type="radio" value="balance" checked 
+onclick="fSelectBankingOption()">
+<label for="rdobalance">Balance</label><br>
+<input id="rdodeposit" name="banking" type="radio" value="deposit" 
+onclick="fSelectBankingOption()">
+<label for="rdodeposit">Deposit</label><br>
+<input id="rdoopenaccount" name="banking" type="radio" value="openaccount" 
+onclick="fSelectBankingOption()">
+<label for="rdoopenaccount">Open an Account</label><br>
+<input id="rdowithdrawal" name="banking" type="radio" value="withdrawal" 
+onclick="fSelectBankingOption()">
+<label for="rdowithdrawal">Withdrawal</label>
+
+</nav>
+<aside class="clsUsernameLogout">
+<div id="divUsername">{{user.username}}</div>
+<div id="divLogout"><a id="aLogout" onclick="fSubmitLogout();">Logout</a></div>
+</aside>
+
+<label id="lblmessage">{{message}}</label>
+<br>
+<button class="clssubmit" type="submit">Submit</button>
+</form>
+
+</body>
+</html>

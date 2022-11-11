@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>WEB322 Assignment Bank</title>
+		<link rel="stylesheet" href="/css/design.css" />
+    	<script src="/js/bank.js"></script>
+	</head>
+
+<body>
+	<h1 class="clsHeaderPartial"></h1>	<form class="clsform" id="frmBankWithdrawal" method="post" action="/l">
+
+		<article class="clscontainer">
+			<br><br><br>
+			<label class="clsDepositLabels">Account Number</label>&nbsp;
+			<input class="clsAccountNumber" name="txtaccountnumber" value="0000001" readonly>
+			<br><br>
+			<label class="clsDepositLabels">Amount</label>&nbsp;&nbsp;
+			<input id="txtamount" name="txtamount" type="text"
+					onkeydown="return fnDisableKeys(event)"
+					onkeypress="return fnInputCharacters(event)"
+					autofocus>
+			<br>
+			<label id="lblmessage"></label>
+		</article>
+
+		<section style="position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto;">
+			<button id="btnSubmit" name="btnSubmit" type="submit" value="withdrawal">Submit</button>
+			<button id="btnCancel" name="btnSubmit" type="submit" value="cancel">Cancel</button>		
+		</section>
+	</form>
+
+</body>
+</html>

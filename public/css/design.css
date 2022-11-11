@@ -1,0 +1,304 @@
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+article.clscontainer
+{
+	background-color: #B8860f;
+	border: 20px solid #8B451f;
+	border-radius: 15px;
+	box-shadow: #A0522f 0px 25px 15px -15px;
+	height: 350px;
+	left: 0;
+	margin: 0 auto;
+	padding-top: 20px;
+	position: absolute;
+	right: 0;
+	font-family: monospace;
+	text-align: center;
+	top: 80px;
+	width: 450px;
+}
+
+body
+{
+	background-color: #DEB88f;
+}
+button
+{
+	background-color: transparent;
+	border: 5px solid #A0522f;
+	border-radius: 5px;
+	font-size: 1.2em;
+	width: 200px;
+}
+button:disabled
+{
+	background-color: #A0522f;
+    color: #FFFAFf;	
+}
+button:hover
+{
+	background-color: #66339f;
+    color: #ffffff;
+}
+button.clssubmit
+{
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+}
+
+form.clsForm
+{
+	border: 0px solid #F4A46f;
+	height: 600px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 1200px;			
+}
+
+h1, h2, h3, h4
+{
+	color: #BC8F8f;
+    text-align: center;
+}
+
+h1.clsHeaderPartial
+{
+	color: #BC8F8f;	
+	font: 2.5em monospace;
+	font-weight: 900;
+	min-height: 50px;
+}
+input[type="text"], input[type="password"], input[type="number"]
+{
+	background-color: transparent;
+	border: 5px solid #8B451f;
+	color: #80008f;
+	font-size: 2.1em;
+	width: 200px;
+}
+input.clsAccountNumber
+{
+	background-color: transparent;
+	border: 0px solid #bfeeee;
+	color: #bfeeee;
+	font: bold 2.1em calibri, arial;
+	width: 120px;
+}
+input[type="email"]
+{
+	margin-bottom: 5px;
+    width: 300px;
+}
+
+#lblmessage
+{
+	background-color: #bfeeee;
+	bottom: 60px;
+	color: #00000f;
+	display: inline-block;
+	font: 1.2em calibri;
+	font-weight: 900;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	width: 300px;	
+}
+
+p.clsbalance
+{
+	color: #bfeeee;
+	font: bold 2.0em calibri, arial;
+}
+
+label.clsDepositLabels
+{
+	color: #00000f;
+	font: bold 2.1em calibri, arial;	
+}
+
+.deepshadow 
+{
+	color: #00000f;
+	font-size: 8em;
+	background-color: #B8860f;
+	letter-spacing: .1em;
+}
+.clsmenu
+{
+	border: 0px solid #22bfee;
+	color: #00000f;
+	height: 200px;
+	margin: 0 auto;
+	padding: 1vh;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 50px;
+	width: 180px;		
+}
+#txtid
+{
+	font: 1.2em courier;
+	margin: 0 10px;;
+    width: 180px;
+}
+
+input[type="radio"]
+{
+	margin: 0 5px;
+    width: 30px;
+}
+
+.clsUsernameLogout
+{
+	border: 0px solid #ff0000;
+	height: 20px;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	text-align: right;
+    top: 0;
+	width: 200px;			
+}
+div#divUsername
+{
+	border: 0px solid #00000f;
+    color: #00000f;	
+    right: 0;
+    opacity: 1;
+	position: absolute;
+	text-align: right;
+    top: 0;
+    transition: opacity 1s ease-out;    
+}
+div#divLogout
+{
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+a#aLogout
+{
+    color: #00000f;
+    opacity: 0;	
+    text-decoration: underline;
+    transition: opacity 1s ease-in;        
+}
+.clsUsernameLogout:hover div#divUsername
+{
+    opacity: 0;
+}
+.clsUsernameLogout:hover a#aLogout
+{
+    opacity: 1;	
+}
+
+#frmBankLogin input[type="text"], #frmBankLogin input[type="password"], #frmBankLogin button, #frmBankLogin a
+{
+	font: bold 2.0em calibri, arial;
+	height: 50px;
+	width: 400px;
+}
+
+a#aRegister
+{
+	background-color: #9bbbbb;
+	border: 0px solid #bfeeee;
+	color: #00000f;
+	display: inline-block;
+	font: 1.5em calibri;
+	height: 30px;	
+	margin-bottom: 5px;
+	text-align: center;
+	text-decoration: none;
+	width: 400px;	
+}
+
+/*	bankOpenAccount.hbs	*/
+
+.clsaccounttype
+{
+	color: #00000f;
+	font: bold 2.0em calibri, arial;
+}
+.clsrdoaccounttype
+{
+	background-color: #ffffff;
+	height: 20px;
+}
+
+img
+{
+	height: 360px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	width: 360px;
+}
+select
+{
+	border: 1px solid #bfeeee;
+	background-color: #bfeeee;
+	color: #00000f;
+	float: right;
+	height: 1.5em;
+	margin: 0;
+	width: 200px;
+}
+
+input[type="email"]:invalid		
+{
+	color: #f00;
+}
+
+#frmBankRegister input[type="email"], #frmBankRegister input[type="password"]
+{
+	font: bold 2.0em calibri, arial;
+	height: 50px;
+	width: 400px;
+}
+button#btnRegister
+{
+	font: bold 2.0em calibri, arial;
+	height: 50px;
+	width: 400px;
+}
+
+div.clslogincontent
+{
+	border: 3px double #bfeeee;
+	border-radius: 5px;
+	height: 180px;
+	left: 0;
+    margin: 0 auto;
+	padding: 6px 3px 6px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+    top: 50px;
+    width: 360px;		
+}
+
+div.clsregistercontent
+{
+	border: 3px double #bfeeee;
+	border-radius: 2%;
+    margin: 3vh auto;
+	padding: 2vh 1vh 5vh;
+    text-align: center;
+    top: 10vh;
+    width: 360px;		
+}
